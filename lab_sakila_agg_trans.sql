@@ -1,8 +1,7 @@
 use sakila;
 -- Challenge 1
--- 1. 
-select max(length) as max_duration from film;
-select min(length) as min_duration from film;
+-- 1.1
+select max(length) as max_duration, min(length) as min_duration from film;
 -- 1.2
 select floor(avg(length)) from film; -- 115 min
 
