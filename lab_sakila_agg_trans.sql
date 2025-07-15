@@ -2,7 +2,9 @@ use sakila;
 -- Challenge 1
 -- 1. You need to use SQL built-in functions to gain insights relating to the duration of movies:
 -- 1.1 Determine the shortest and longest movie durations and name the values as max_duration and min_duration.
-select max(length) as max_duration, min(length) as min_duration from film;
+select 
+max(length) as max_duration, min(length) as min_duration 
+from film;
 -- 1.2
 select floor(avg(length)) from film; -- 115 min
 
