@@ -10,11 +10,11 @@ select floor(avg(length)) from film; -- 115 min
 select datediff(max(rental_date), min(rental_date))
 from rental;
 
--- alter table rental
--- add column month_of_rental varchar(20);
+alter table rental
+add column month_of_rental varchar(20);
 
--- alter table rental
--- add column day_of_rental varchar(10);
+alter table rental
+add column day_of_rental varchar(10);
 
 select 
 	rental_id,
@@ -60,6 +60,7 @@ SELECT last_name
 FROM actor
 GROUP BY last_name
 HAVING COUNT(*) = 1;
+
 
 
 
